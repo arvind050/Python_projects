@@ -37,9 +37,10 @@ def play_loop():
         play_game = input("Do you want to play again? y = Yes , n = No: ")
     if play_game == "y":
         main()
+        hangman()
     elif play_game == "n":
         print("Thank you!!\nHope to see you again.")
-        
+        exit()
     
 def hangman():
     global count
